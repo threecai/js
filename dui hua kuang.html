@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #a{
+            height:200px;width:200px;position:absolute;left:50%;top:50%;margin-left:-100px;margin-top:-100px;
+        }
+        #b{
+            height:150px;wdith:200px;
+        }
+        #con{
+            height: 100px;width:100px;margin:50px 50px 0;background: lightblue;
+        }
+    </style>
+    <script type="text/javascript">
+        function hidetext(){
+            var my=document.getElementById("con");
+            my.style.display="none";
+        }
+        function showtext(){
+            var my=document.getElementById("con");
+            my.style.display="block";
+        }
+    </script>
+</head>
+<body>
+<div id="a">
+    <div id="b">
+        <div id="con"></div>
+    </div>
+    <form class="c">
+        <input type="button" onclick="hidetext()" value="隐藏信息"/>
+        <input type="button" onclick="showtext()" value="显示信息"/>
+    </form>
+</div>
+</body>
+</html>
